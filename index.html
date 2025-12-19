@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio</title>
+    <!-- Here style is linked -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Here Tailwind is linked -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body class="body">
+    <!-- <li>
+            <strong>To-Do List App:</strong> A simple task manager built using
+            HTML, CSS, and JavaScript.
+          </li><br>
+          <li>
+            <strong>Calculator App:</strong> A clean and responsive calculator
+            with basic mathematical operations.
+          </li><br>
+          <li>
+            <strong>Weather App:</strong> A small project that fetches real-time
+            weather data using a public API.
+          </li> -->
+
+    <!-- Navbar -->
+    <header>
+      <div class="navbar">
+        <h1>GopiRawat</h1>
+        <nav>
+          <div class="nav-container">
+            <ul class="nav-links">
+              <li><a class="links" href="index.html">Home</a></li>
+              <li><a class="links" href="#about">About</a></li>
+              <li><a class="links" href="#project">Projects</a></li>
+              <li><a class="links" href="#skill">Skills</a></li>
+              <li><a class="links" href="#contact">Contacts</a></li>
+            </ul>
+          </div>
+          <div class="menu-icon">☰</div>
+          <!-- Hamburger icon -->
+        </nav>
+      </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+      <!-- intro-section section -->
+      <section class="intro-section">
+        <div class="intro-image">
+          <img src="images/myimage.jpg" alt="" />
+        </div>
+        <div class="intro">
+          <p>Hi, My name is</p>
+          <h1 style="font-family: Georgia, 'Times New Roman', Times, serif">
+            Gopikishan Rawat
+          </h1>
+          <p>I build the things for the web.</p>
+          <p>
+            An engineering student passionate about coding and creativity.
+            Currently, I'm focused on creating accessible, human-centered
+            products.
+          </p>
+          <div class="intro-btns">
+            <button class="intro-btn">Check Out My Works</button>
+            <button class="intro-btn">
+              <a href="Pizza.png" download>Download Resume</a>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me section -->
+      <section class="about-section section" id="about">
+        <h2>About Me</h2>
+        <div class="abouts">
+          <!-- <img src="about.jpeg" alt="myimage" /> -->
+          <p>
+            Hello! My name is <strong>Gopikishan</strong>, and I'm pursuing my
+            B.Tech in Computer Science from
+            <strong>BNCET College, Lucknow</strong>. I'm passionate about
+            technology, web development, and creating user-friendly designs.
+            Apart from coding, I love exploring new tools, learning efficient
+            ways to solve problems, and continuously improving my skills. My
+            goal is to become a full-stack developer and build real-world
+            software that makes a difference.
+          </p>
+        </div>
+      </section>
+
+      <!-- Projects section -->
+      <section class="projects-section section" id="project">
+        <h2>Projects</h2>
+        <p>
+          I have worked on multiple small and medium-sized projects to
+          strengthen my web development skills. Some of my key projects include:
+        </p>
+        <div class="card-container">
+          <div class="card">
+            <img src="images/myimage.jpg" alt="project1" />
+            <p>
+              <strong>Swiggy Clone:</strong> A frontend clone using HTML, CSS,
+              and JavaScript that replicates Swiggy's homepage layout and
+              design.
+            </p>
+          </div>
+          <div class="card">
+            <img src="images/myimage.jpg" alt="project2" />
+            <p>
+              <strong>Spotify Clone:</strong> A simple music player UI built
+              using HTML, CSS, and basic JS functionalities.
+            </p>
+          </div>
+          <div class="card">
+            <img src="images/myimage.jpg" alt="project3" />
+            <p>
+              <strong>Portfolio Website:</strong> A personal website showcasing
+              my skills, projects, and background.
+            </p>
+          </div>
+        </div>
+        <p>
+          Each project has helped me understand core development concepts like
+          responsive design, DOM manipulation, and clean coding practices.
+        </p>
+      </section>
+
+      <!-- Skills section -->
+      <section class="skills-section section" id="skill">
+        <h2>Skills</h2>
+        <div class="skills">
+          <div class="skills-icon">
+            <img
+              src="https://icon.icepanel.io/Technology/svg/C.svg"
+              alt="c-icon"
+            />
+            <div>C</div>
+          </div>
+          <div class="skills-icon">
+            <img
+              src="https://logo.svgcdn.com/devicon/python-original.svg"
+              alt="python-original"
+            />
+            <div>Python</div>
+          </div>
+          <div class="skills-icon">
+            <img
+              src="https://logo.svgcdn.com/devicon/java-original.svg"
+              alt="java-original"
+            />
+            <div>Java</div>
+          </div>
+          <div class="skills-icon">
+            <img
+              src="https://logo.svgcdn.com/devicon/html5-original.svg"
+              alt="html5-original"
+            />
+            <div>HTML</div>
+          </div>
+          <div class="skills-icon">
+            <img
+              src="https://logo.svgcdn.com/devicon/css3-original.svg"
+              alt="css3-original"
+            />
+            <div>CSS</div>
+          </div>
+          <div class="skills-icon">
+            <img
+              src="https://logo.svgcdn.com/logos/javascript.svg"
+              alt="javascript"
+            />
+            <div>JavaScript</div>
+          </div>
+          <div class="skills-icon">
+            <img
+              src="https://logo.svgcdn.com/logos/nodejs-icon.png"
+              alt="nodejs-icon"
+            />
+            <div>NodeJS</div>
+          </div>
+          <div class="skills-icon">
+            <img
+              src="https://icon.icepanel.io/Technology/png-shadow-512/Express.png"
+              alt="express"
+            />
+            <div>ExpressJS</div>
+          </div>
+          <div class="skills-icon">
+            <img
+              src="https://logo.svgcdn.com/devicon/mongodb-original.svg"
+              alt="mongodb-original"
+            />
+            <div>MongoDB</div>
+          </div>
+          <div class="skills-icon">
+            <img
+              src="https://logo.svgcdn.com/devicon/tailwindcss-original.svg"
+              alt="tailwindcss"
+            />
+            <div>Tailwind</div>
+          </div>
+          <div class="skills-icon">
+            <img
+              src="https://logo.svgcdn.com/devicon/react-original.svg"
+              alt="react-original"
+            />
+            <div>React</div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacts section -->
+      <section class="contact-section section" id="contact">
+        <h2>Contact us</h2>
+        <div class="contacts">
+          <form action="#">
+            <label for="fname">Name</label>
+            <input
+              type="text"
+              id="fname"
+              name="fname"
+              placeholder="Enter your name"
+              required
+            />
+            <label for="gemail">Email</label>
+            <input
+              type="email"
+              id="gemail"
+              name="gemail"
+              placeholder="Enter your email address"
+              required
+            />
+            <label for="message">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              rows="3"
+              maxlength="100"
+              placeholder="Enter your message..."
+              required
+            ></textarea>
+            <button class="form-btn" type="submit">Send Message</button>
+          </form>
+          <div class="links">
+            <div class="instagram">
+              <a
+                href="https://www.instagram.com/gopikishan__9?igsh=MXFmMGd2OHRwMmsxeg=="
+                ><img
+                  src="https://cdn-icons-png.flaticon.com/128/2111/2111463.png"
+                  alt="instagram"
+                />
+              </a>
+              <p>Instagram</p>
+            </div>
+            <div class="linkedin">
+              <a
+                href="https://www.linkedin.com/in/gopikishan-rao-750963347?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                ><img
+                  src="https://cdn-icons-png.flaticon.com/128/4494/4494497.png"
+                  alt="instagram"
+              /></a>
+              <p>Linkedin</p>
+            </div>
+            <div class="github">
+              <a href="https://github.com/Gopikishan9"
+                ><img
+                  src="https://cdn-icons-png.flaticon.com/128/3291/3291695.png"
+                  alt="instagram"
+                />
+              </a>
+              <p>Github</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <p>Copyright &copy; 2025 GopiDev | Designed by Gopikishan Rawat</p>
+    </footer>
+
+    <!-- Here is the script -->
+    <script src="script.js"></script>
+  </body>
+</html>
+
+<!-- project1 -->
