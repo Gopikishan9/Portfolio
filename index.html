@@ -18,24 +18,12 @@
     <meta name="author" content="Gopikishan Rawat" />
     <title>Gopikishan Rawat | Web Developer Portfolio</title>
     <!-- Here style is linked -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link rel="icon" type="image/png" href="images/faviconbr.png" />
     <!-- Here Tailwind is linked -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   </head>
   <body class="body">
-    <!-- <li>
-            <strong>To-Do List App:</strong> A simple task manager built using
-            HTML, CSS, and JavaScript.
-          </li><br>
-          <li>
-            <strong>Calculator App:</strong> A clean and responsive calculator
-            with basic mathematical operations.
-          </li><br>
-          <li>
-            <strong>Weather App:</strong> A small project that fetches real-time
-            weather data using a public API.
-          </li> -->
-
     <!-- Navbar -->
     <header>
       <div class="navbar">
@@ -48,6 +36,28 @@
               <li><a class="links" href="#project">Projects</a></li>
               <li><a class="links" href="#skill">Skills</a></li>
               <li><a class="links" href="#contact">Contacts</a></li>
+              <li>
+                <button
+                  id="themeBtn"
+                  onclick="themeMode()"
+                  style="
+                    display: flex;
+                    align-items: center;
+                    gap: 4px;
+                    border: none;
+                    cursor: pointer;
+                    font-weight: 900;
+                  "
+                >
+                  <span id="themetxt">Dark</span>
+                  <img
+                    id="themeimg"
+                    src="images/night.png"
+                    alt="dark mode img"
+                    width="15"
+                  />
+                </button>
+              </li>
             </ul>
           </div>
           <div class="menu-icon">☰</div>
@@ -61,7 +71,7 @@
       <!-- intro-section section -->
       <section class="intro-section">
         <div class="intro-image">
-          <img src="Gopikishan Rawat.jpg" alt="Gopikishan Rawat" />
+          <img src="images/Gopikishan_Rawat.jpg" alt="Gopikishan Rawat" />
         </div>
         <div class="intro">
           <p>Hi, My name is</p>
@@ -77,13 +87,17 @@
           <div class="intro-btns">
             <button class="intro-btn">Check Out My Works</button>
             <button class="intro-btn">
-              <a href="Pizza.png" download>Download Resume</a>
+              <a href="#" download >Download Resume</a>
             </button>
             <button class="intro-btn">
-              <a href="https://www.cineby.gd/" >Watch Movies/Series</a>
+              <a href="https://www.cineby.gd/" target="_blank"
+                >Watch Movies/Series</a
+              >
             </button>
             <button class="intro-btn">
-              <a href="https://www.beatsync.gg/" >Listen With Me</a>
+              <a href="https://www.beatsync.gg/" target="_blank"
+                >Listen With Me</a
+              >
             </button>
           </div>
         </div>
@@ -116,7 +130,7 @@
         </p>
         <div class="card-container">
           <div class="card">
-            <img src="swiggyclone.jpg" alt="swiggy clone" />
+            <img src="images/swiggyclone.jpg" alt="swiggy clone" />
             <p>
               <strong>Swiggy Clone:</strong> A frontend clone using HTML, CSS,
               and JavaScript that replicates Swiggy's homepage layout and
@@ -124,14 +138,14 @@
             </p>
           </div>
           <div class="card">
-            <img src="spotifyclone.jpg" alt="Spotify clone" />
+            <img src="images/spotifyclone.jpg" alt="Spotify clone" />
             <p>
               <strong>Spotify Clone:</strong> A simple music player UI built
               using HTML, CSS, and basic JS functionalities.
             </p>
           </div>
           <div class="card">
-            <img src="portfolio.jpg" alt="portfolio" />
+            <img src="images/Portfolio.jpeg" alt="portfolio" />
             <p>
               <strong>Portfolio Website:</strong> A personal website showcasing
               my skills, projects, and background.
@@ -242,19 +256,19 @@
         <h2>Contact us</h2>
         <div class="contacts">
           <form action="https://formspree.io/f/mwvkdynw" method="POST">
-            <label for="fname">Name</label>
+            <label for="name">Name</label>
             <input
               type="text"
-              id="fname"
-              name="fname"
+              id="name"
+              name="user_name"
               placeholder="Enter your name"
               required
             />
-            <label for="gemail">Email</label>
+            <label for="email">Email</label>
             <input
               type="email"
-              id="gemail"
-              name="gemail"
+              id="email"
+              name="email_id"
               placeholder="Enter your email address"
               required
             />
@@ -292,6 +306,7 @@
             <div class="github">
               <a href="https://github.com/Gopikishan9"
                 ><img
+                  id="gitImg"
                   src="https://cdn-icons-png.flaticon.com/128/3291/3291695.png"
                   alt="instagram"
                 />
@@ -309,10 +324,6 @@
     </footer>
 
     <!-- Here is the script -->
-    <script src="script.js"></script>
+    <script src="src/script.js"></script>
   </body>
 </html>
-
-
-
-
